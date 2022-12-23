@@ -1,0 +1,8 @@
+<resources>
+    <string name="char_data">Lab2</string>
+    <string-array name = "Data">
+        <item name="Words"></item>
+    <item name="Chars"></item>
+    </string-array>
+
+</resources>

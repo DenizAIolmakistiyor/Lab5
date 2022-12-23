@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnMessage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TvMain"
+        android:layout_width="97dp"
+        android:layout_height="58dp"
+        android:text="Text Counter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonMessage"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonMessage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.693" />
+
+    <Button
+        android:id="@+id/buttonMessage"
+        android:layout_width="105dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="353dp"
+        android:text="Count"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/spnMessage"
+        app:layout_constraintStart_toStartOf="@+id/spnMessage"
+        app:layout_constraintTop_toBottomOf="@+id/spnMessage"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edPhrase"
+        android:layout_width="235dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="142dp"
+        android:layout_marginBottom="81dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Add Text"
+        app:layout_constraintBottom_toTopOf="@+id/spnMessage"
+        app:layout_constraintEnd_toEndOf="@+id/spnMessage"
+        app:layout_constraintStart_toStartOf="@+id/spnMessage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/spnMessage"
+        android:layout_width="410dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edPhrase"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
